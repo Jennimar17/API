@@ -1,0 +1,59 @@
+.btn{
+    height: 1.5rem;
+    background-color: rgba(172, 63, 63, 0.849);
+    color: cornsilk;
+    border-radius: 0.5rem;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4px;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.carta{
+    display:inline-block;
+    justify-content: center;
+    width: 300px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: 20px 20px; 
+    background-color: rgba(218, 218, 218, 0.411);
+    transition: width 2s;
+    transition-timing-function: cubic-bezier(.78,.79,.79,.32);
+    color: #000000;
+    text-shadow: -1px 6px 10px rgba(102, 101, 101, 0.49);
+    border-bottom: 15px solid rgba(255, 252, 252, 0.788);
+    box-shadow: 10px 8px 12px rgba(22, 22, 22, 0.2);
+    align-items: center;
+}
+.carta:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 310px;
+}
+.btn:hover{
+    background-color: rgba(231, 87, 87, 0.849);
+}
+.datos{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    opacity: 1;
+    color: black;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.informacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.icono{
+    width: 8rem;
+}
