@@ -1,14 +1,33 @@
-import React from "react";
+import React, {Component} from "react";
+import axios from "axios";
+import { personaje } from "../data2";
+//import SearchBar from './components/SearchBar.jsx';
 //import estilos from "./card.module.css";
 // id, name, status, species, type, gender, originLocation, originUrl, image, onClose
-export default function Character({ name }) {
+var index = document.getElementById("input").value;
 
-  return (
-    <div>
-        <h1>ASJDKASHD</h1>
-        <h1> {name} </h1>
-    </div>
+class Container extends Component {
+  componentDidMount(){
+  axios.get("https://rickandmortyapi.com/api/character/"+ index )
+  .then(result=>{
+  console.log(result)
+  var personaje = {result}
+  console.log(personaje);
+  }).catch(console.log)
+  }
+  
+  render (){
+  return(
+  <div>
+  <h1>Henry APP</h1>
+  <h2> {personaje.name} </h2>
+  <img src={personaje.image}></img>
+  <input id="input" type="text" placeholder={'City...'}/>
+  <button onClick ={() => }>Search</button>
+  </div>
   );
+  }
+
 }
 
 /*<div className={estilos.carta}>
@@ -34,3 +53,4 @@ export default function Character({ name }) {
   </div>
 </div>
 </div> */
+export default Container;

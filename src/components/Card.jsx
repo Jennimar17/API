@@ -1,24 +1,14 @@
 import React from "react";
-import estilos from "./card.module.css";
-import { Sunny, Cloudy, Rain, Snow } from 'weather-styled-icon';
+
+
 export default function Card({ name, min, max, img, onClose }) {
 
 
-switch(img){
-  case "09d":
-    var imagen= <Sunny/>
-    break;
-  case "03n":
-    var imagen= <Rain/>
-    break;
-  case "01d":
-    var imagen= <Snow/>
-    break;
-}
 
 
   return (
-    <div className={estilos.carta}>
+    <div></div>
+    /*<div className={estilos.carta}>
       <div className={estilos.top}>
         <h3 className={estilos.name}>{name}</h3>
         <button className={estilos.btn} onClick={onClose}>
@@ -40,6 +30,6 @@ switch(img){
           {imagen}
         </div>
       </div>
-    </div>
+    </div>*/
   );
 }

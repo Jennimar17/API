@@ -7,23 +7,19 @@ import data, { Cairns } from './data.js';
 import { personaje } from './data2.js';
 
 import Character from './components/Character';
+import Container from './components/Character';
 //import Character from './src/components/character.jsx';
+
+
+//<Cards cities={data}/>
 
 function App() {
   return (
     <div className="App">
       <div>
-        <Character
-          name = {personaje.name}
-          
-        />
+        <Container />
       </div>
       <hr />
-      <div>
-        <Cards
-          cities={data}
-        />
-      </div>
       <hr />
       <div>
         <SearchBar
